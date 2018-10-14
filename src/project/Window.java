@@ -7,62 +7,69 @@ import java.awt.event.ActionListener;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-public class Window extends JFrame {
-    protected static final int WIDTH = 950;
+public class Window extends JFrame
+{
+
+    protected static final int WIDTH = 570;
     protected static final int HEIGHT = 640;
     private JTextField[] fields = new JTextField[18];
     private int[] costs = new int[7];
     private JLabel[] labels = new JLabel[21];
     private String[] advices = new String[3];
-    private JPanel panel;
+    private JPanel panel = new JPanel();
     private JButton calculate;
     private JButton clear;
 
-    Window() {
+    Window()
+    {
         super("Смогли бы вы сэкономить?");
         setSize(WIDTH, HEIGHT);
-        createPanel();
+        createPanel(panel);
         createLayout();
-        buttonListner();
+        buttonListener();
         add(panel);
         setLocationRelativeTo(null);
+        setIconImage(new ImageIcon("res/kek.png").getImage());
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
     }
 
-    private void addLabels() {
+    private void addLabels()
+    {
         labels[0] = new JLabel("Ваш ежемесячный доход:");
         labels[0].setFont(new Font("",Font.BOLD,18));
-        labels[1] = new JLabel("Заработная плата(eсли вы не работаете, укажите ту часть заработной платы родителей, которая покрывает лично ваши расходы)");
-        labels[2] = new JLabel("Доход от аренды");
-        labels[3] = new JLabel("Пособие или иная социальная выплата");
-        labels[4] = new JLabel("Пассивный доход(кешбэк с операций с кредитными картами, продажа в интернет товаров собственного производства, блогинг и др.)");
+        labels[1] = new JLabel("Заработная плата (Сколько берешь у родителей?)");
+        labels[2] = new JLabel("Доход от аренды (Дальше смотри)");
+        labels[3] = new JLabel("Пособие или иная социальная выплата (Стипендия? Хех...)");
+        labels[4] = new JLabel("Пассивный доход (Кешбэк, Авито, Юла, СТАВКИ НА СПОРТ, блогинг и др.)");
         labels[5] = new JLabel("Сбережения");
         labels[6] = new JLabel("Иной источник дохода");
         labels[7] = new JLabel("Ваши ежемесячные расходы:");
         labels[7].setFont(new Font("",Font.BOLD,18));
-        labels[8] = new JLabel("Коммунальные услуги");
+        labels[8] = new JLabel("Коммунальные услуги (Живешь один, че взрослый, блен-бленский?");
         labels[9] = new JLabel("Аренда жилья");
-        labels[10] = new JLabel("Погашение кредита");
+        labels[10] = new JLabel("Погашение кредита (Че, жесткий?)");
         labels[11] = new JLabel("Образование");
         labels[12] = new JLabel("Здравоохранение");
-        labels[13] = new JLabel("Питание");
-        labels[14] = new JLabel("Одежда");
-        labels[15] = new JLabel("Предметы домашнего обихода");
-        labels[16] = new JLabel("Интернет, телефон");
+        labels[13] = new JLabel("Кушац");
+        labels[14] = new JLabel("Топ шмот");
+        labels[15] = new JLabel("Уютный ламповый стафф");
+        labels[16] = new JLabel("Интернет, телефон (Самое важное, да?)");
         labels[17] = new JLabel("Проезд");
         labels[18] = new JLabel("Штрафы");
         labels[19] = new JLabel("Иные расходы");
     }
 
-    private void addFields() {
+    private void addFields()
+    {
         for (int i = 0; i < 18; i++) {
             fields[i] = new JTextField();
             fields[i].setText("0");
         }
     }
 
-    private void addCosts() {
+    private void addCosts()
+    {
         costs[0] = 10000;
         costs[1] = 4500;
         costs[2] = 500;
@@ -72,12 +79,14 @@ public class Window extends JFrame {
         costs[6] = 1000;
     }
 
-    private void addButtons() {
+    private void addButtons()
+    {
         calculate = new JButton("Расчитать");
         clear = new JButton("Очистить");
     }
 
-    private void addAdvices() {
+    private void addAdvices()
+    {
         advices[0]="Очевидно, Вы лишены способности принимать взвешенные финансовые\n" +
                 "решения. Срочно учитесь планировать свои траты. Что можно предложить:\n" +
                 "создавайте резервы под крупные покупки, для этого четко определитесь с\n" +
@@ -115,9 +124,8 @@ public class Window extends JFrame {
                 "Возьмите это за правило.";
     }
 
-    private void createPanel() {
-        panel = new JPanel();
-        panel.setBackground(Color.MAGENTA);
+    private void createPanel(JPanel panel)
+    {
         addCosts();
         addAdvices();
         addFields();
@@ -128,7 +136,7 @@ public class Window extends JFrame {
         }
     }
 
-    boolean checkFields()
+    private boolean checkFields()
     {
         for(int i=0;i<18;i++)
         {
@@ -147,7 +155,8 @@ public class Window extends JFrame {
         return true;
     }
 
-    private void buttonListner() {
+    private void buttonListener()
+    {
         clear.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -202,7 +211,8 @@ public class Window extends JFrame {
         });
     }
 
-    private void createLayout() {
+    private void createLayout()
+    {
         GroupLayout layout = new GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setAutoCreateGaps(true);
