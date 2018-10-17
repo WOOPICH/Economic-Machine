@@ -7,10 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6373d7c-139e-4434-8e64-8060a3020f5d" name="Default Changelist" comment="Task1">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/project/Window$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/project/Window$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/project/Window$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/project/Window$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/project/Window.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/project/Window.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/project/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project/Window.java" afterDir="false" />
     </list>
     <list id="8e02c95d-764b-4550-916b-af3ebf9745b3" name="Revert &quot;Task1&quot;" comment="Revert &quot;Task1&quot;&#10;&#10;This reverts commit 089f9ea" />
@@ -154,12 +150,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="955" />
+          <entry key="java" value="2390" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="955" />
+          <entry key="JAVA" value="2390" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -182,17 +178,34 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/project/Window.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="128" column="38" selection-start-line="128" selection-start-column="38" selection-end-line="128" selection-end-column="38" />
+            <state relative-caret-position="494">
+              <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#884#885#0" expanded="true" />
+                <element signature="e#919#920#0" expanded="true" />
+                <element signature="e#1048#1049#0" expanded="true" />
+                <element signature="e#1083#1084#0" expanded="true" />
+                <element signature="e#1344#1345#0" expanded="true" />
+                <element signature="e#1379#1380#0" expanded="true" />
+                <element signature="e#1521#1522#0" expanded="true" />
+                <element signature="e#1556#1557#0" expanded="true" />
+                <element signature="e#1618#1619#0" expanded="true" />
+                <element signature="e#1653#1654#0" expanded="true" />
+                <element signature="e#1900#1901#0" expanded="true" />
+                <element signature="e#1935#1936#0" expanded="true" />
+                <element signature="e#3754#3755#0" expanded="true" />
+                <element signature="e#3790#3791#0" expanded="true" />
+                <element signature="e#4070#4071#0" expanded="true" />
+                <element signature="e#4106#4107#0" expanded="true" />
                 <element signature="method#addLabels#0;class#Window#0" />
                 <element signature="method#addFields#0;class#Window#0" />
                 <element signature="method#addCosts#0;class#Window#0" />
                 <element signature="method#addButtons#0;class#Window#0" />
                 <element signature="method#addAdvices#0;class#Window#0" />
+                <element signature="method#createPanel#0;class#Window#0" />
                 <element signature="method#checkFields#0;class#Window#0" />
-                <element signature="method#buttonListner#0;class#Window#0" />
+                <element signature="method#createLayout#0;class#Window#0" />
               </folding>
             </state>
           </provider>
@@ -290,7 +303,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://H:/Project/src/com/company/Main.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539541223687" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539739724657" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
@@ -474,17 +487,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/project/Window.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="128" column="38" selection-start-line="128" selection-start-column="38" selection-end-line="128" selection-end-column="38" />
+        <state relative-caret-position="494">
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#884#885#0" expanded="true" />
+            <element signature="e#919#920#0" expanded="true" />
+            <element signature="e#1048#1049#0" expanded="true" />
+            <element signature="e#1083#1084#0" expanded="true" />
+            <element signature="e#1344#1345#0" expanded="true" />
+            <element signature="e#1379#1380#0" expanded="true" />
+            <element signature="e#1521#1522#0" expanded="true" />
+            <element signature="e#1556#1557#0" expanded="true" />
+            <element signature="e#1618#1619#0" expanded="true" />
+            <element signature="e#1653#1654#0" expanded="true" />
+            <element signature="e#1900#1901#0" expanded="true" />
+            <element signature="e#1935#1936#0" expanded="true" />
+            <element signature="e#3754#3755#0" expanded="true" />
+            <element signature="e#3790#3791#0" expanded="true" />
+            <element signature="e#4070#4071#0" expanded="true" />
+            <element signature="e#4106#4107#0" expanded="true" />
             <element signature="method#addLabels#0;class#Window#0" />
             <element signature="method#addFields#0;class#Window#0" />
             <element signature="method#addCosts#0;class#Window#0" />
             <element signature="method#addButtons#0;class#Window#0" />
             <element signature="method#addAdvices#0;class#Window#0" />
+            <element signature="method#createPanel#0;class#Window#0" />
             <element signature="method#checkFields#0;class#Window#0" />
-            <element signature="method#buttonListner#0;class#Window#0" />
+            <element signature="method#createLayout#0;class#Window#0" />
           </folding>
         </state>
       </provider>
